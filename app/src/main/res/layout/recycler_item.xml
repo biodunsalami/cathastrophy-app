@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="4dp"
+        android:layout_margin="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pastel_purple_ish">
+
+            <ImageView
+                android:id="@+id/itemIv1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/itemTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cat Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/itemIv1"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/itemTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperament"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/itemTv1"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/but1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="more"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemIv1"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
